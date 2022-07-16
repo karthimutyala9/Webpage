@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>My webpage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="ex0.js"></script>
+                <script src="ex.js"></script>
+    <link rel="stylesheet" href="main.css">
+    </head>
+    <body style="background-color: #c1cfdd;">
+     <nav id="total">
+      <div class="navbar">
+               <div class="menu-bar">
+                    <image id="pichu" src="karthik.jpeg" alt="...">
+                </span>&nbsp;
+                
+            <ul>
+                <li><a class="active" href="home.html">Home<i class="fa fa-home"></i></a></li>
+                <li><a href="#">Exam
+                    <i class="fa fa-book"></i></a>
+                <div class="sub-menu-0">
+                    <ul>
+                        <li><a href="loginn.html">login</a></li>
+                        <li><a href="validForm.html">register</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                <li><a href="#">Branch<i class="fa fa-wrench"></i></a>
+                <div class="sub-menu-1">
+                    <ul>
+                    <li><a href="#">ece</a></li>
+                    <li class="hover-me"><a href="#">cse</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                                
+                                <li><a href="facultylogin.html">Faculty</a></li>
+                                <li><a href="studentlogin.html">Student</a></li>
+                            </ul>  </div>
+                    </li>
+                    <li><a href="#">mech</a></li>
+                          
+                    </ul>
+                </div>
+                </li>
+                <li><a href="newabout.html">About<i class="fa fa-user"></i></a></li>
+                <li><a href="gmapping.html">contact<i class="fa fa-phone"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+        <div style="text-align:center; border-radius: 20px;">
+                <center>
+                <table style="background-color:azure" cellspacing="20px">
+                    <h1 style="margin-right: 135px;">Registration Form</h1>
+                    <tr><td>First Name:</td><td><input type="text" id="fir"><i id="texts" style="color:red;visibility:hidden;">*Enter correct name</i><br></td></tr>
+                    <tr><td>Last Name:</td><td><input type="text" id="sec"><i id="text2" style="color:red;visibility:hidden;">*Enter correct name</i><br></td></tr>
+                    <tr><td>Middle Name:</td><td><input type="text" id="third"><i id="text3" style="color:red;visibility:hidden;">*Enter correct name</i><br></td></tr>
+                    <tr><td>Your Name is :</td><td><input type="text" readonly id="fullname" onmouseover="fullName()"></td></tr>
+                    <tr><td>Password:</td><td>
+                    <input type="password" id="passW">
+                    <i id="passtext" style="color:red;visibility:hidden;">*Password should contain minimum 6 letters</i><br>
+                </td>
+                </tr>
+                <tr><td>Email:</td><td><input type="email" id="mailin"><i id="mailtext"style="color:red;visibility:hidden;">*Enter valid email</i></td></tr>
+                <tr><td>Hobbies:</td><td>
+                    <div>
+                        <form id="myforms">
+                            <input type="text" id="ftext">
+                            <input type="submit" value="ADD">
+                        </form>
+                    </div>
+                            <ul id="ulist">
+                                <li>Cricket<button style="margin-left: 20px; height: 50px width: 50px">X</button></li>
+                            </ul>
+                    </td>
+                    <!--<input type="checkbox" id="cb1">Sleeping<input type="checkbox" id="cb2">Reading<input type="checkbox" id="cb3">Playing<input type="checkbox" id="cb4">Singing<i id="hobby" style="color:red;visibility:hidden;">*Atleast two hobbies must be selected</i></td>--></tr>
+                <tr><td>PhoneNumber : </td>
+                <td>
+                    <select id="ph">
+                        <option>India(+91)</option>
+                        <option>US(+141)</option>
+                    </select>
+                    <input type="text" id="Phnum"><i id="phtext" style="color:red;visibility:hidden;">*Enter Correct number</i></td></tr>
+                <tr><td>Enter your Birthday :</td><td><input id="bday" type="date"></td></tr>
+                <tr><td>Your Age is :</td><td><input id="bview" readonly type="text" onmouseover="updateAge()"></td></tr>
+                <tr><td>Choose File:</td><td><input id="f" type="file" data-max-size="32154" accept="image/png/jpg"/></td></tr>
+                <tr><td>Address:</td><td><textarea rows="10" id="addr"></textarea></td></tr>
+                <tr><td>Reset</td><td><input type="reset" onclick="option()"></td></tr>
+                <tr><td><input onclick="agg()" type="checkbox" id="accept"></td><td>I accept all the terms and policies <i id="accepttext" style="color:red;visibility:hidden;">*Must accept the terms</i></td></tr>
+                <tr><td></td><td><button  style="margin-left: 20px; height: 40px; width: 100px;" id="but" onclick="validation();">Submit</button></td></tr>   
+                </table>
+           
+            <p class="logininfo">If you are already registered <a href="loginpage.html">Click here</a> to login</p>
+            </div>
+          
+                
+              </body>
+              </html>
+  
